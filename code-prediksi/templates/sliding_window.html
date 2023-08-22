@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+    {% block content %}
+    <section class="resume-section" id="pre-processing">
+        <div class="resume-section-content">
+            <h2 class="mb-2">Sliding Windows</h2>
+            <h4 class="mb-2">Keterangan :</h4>
+            <ol>
+                <li>var1 = open</li>
+                <li>var2 = tertinggi</li>
+                <li>var3 = terendah</li>
+                <li>var4 = penutupan</li>
+              </ol>
+              
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1" id="labeling">
+                    {{df_label|safe}}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

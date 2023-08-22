@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+    {% block content %}
+    <h3 align='center'>Grafik Target dan Output RNN-GRU</h3>
+    <div id="chts" class="charts"></div>
+    <h3 align='center'>MAE: {{mae_rnn|safe}}</h3>
+    <h3 align='center'>RMSE: {{rmse_rnn|safe}}</h3>
+    <h3 align='center'>DA: {{da_rnn|safe}}</h3>
+    <h3 align='center'>MAPE: {{mape_rnn|safe}}</h3>
+    <br>
+    <br>
+    <h3 align='center'>Grafik Target dan Output After Ensemble Learning</h3>
+    <div id="cht" class="chart"></div>
+    <h3 align='center'>MAE: {{mae|safe}}</h3>
+    <h3 align='center'>RMSE: {{rmse|safe}}</h3>
+    <h3 align='center'>DA: {{da|safe}}</h3>
+    <h3 align='center'>MAPE: {{mape|safe}}</h3>
+    {% endblock %}

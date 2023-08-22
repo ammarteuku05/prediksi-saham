@@ -1,0 +1,22 @@
+    {% extends 'base.html' %}
+    {% block content %}
+    <section class="resume-section" id="in">
+        <div class="resume-section-content">
+            <h2 >Denormalisasi</h2>
+            <a type="button" class="btn btn-primary" href="#in">Data RNN-GRU</a>
+            <a type="button" class="btn btn-primary" href="#out">Data Gradient Boosting</a>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                {{DF_Testing_rnn|safe}}
+            </div>
+        </div>
+    </section>
+    <section class="resume-section" id="out">
+        <div class="resume-section-content">
+            <a type="button" class="btn btn-primary" href="#in">Data RNN-GRU</a>
+            <a type="button" class="btn btn-primary" href="#out">Data Gradient Boosting</a>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                {{DF_Testing|safe}}
+            </div>
+        </div>
+    </section>
+    {% endblock %}

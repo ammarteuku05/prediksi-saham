@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <section class="resume-section" id="data">
+        <div class="resume-section-content">
+            <h2 class="mb-0">
+                Prediksi
+                <span class="text-primary">Harga Saham</span>
+            </h2>
+            <div class="subheading mb-4">
+                Data Harga Saham Harian PTBA
+            </div>
+            <!-- <form class="" action="" method="post" enctype="multipart/form-data">
+                <input type="file" name="csvfile" value="" />
+                <input type="submit" name="" value="Submit" />
+            </form> -->
+            <div class="container m-4">
+                {{df|safe}}
+            </div>  
+        </div>
+
+    <script>
+        // Get references to the input and anchor elements
+        const inputValue = document.getElementById('inputValue');
+        const dynamicLink = document.getElementById('dynamicLink');
+
+        // Add an event listener to the input
+        inputValue.addEventListener('input', function() {
+            // Get the value from the input
+            const value = inputValue.value;
+            
+            // Update the href attribute of the anchor tag
+            dynamicLink.href = `/api/saham/${value}`;
+        });
+    </script>
+    </section>
+    {% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+    {% block content %}
+    <h3 align='center'>Grafik Target dan Output RNN-GRU</h3>
+    <div id="cht" class="chart"></div>
+    <h3 align='center'>MAE: {{mae_rnn|safe}}</h3>
+    <h3 align='center'>RMSE: {{rmse_rnn|safe}}</h3>
+    <h3 align='center'>DA: {{da_rnn|safe}}</h3>
+    <h3 align='center'>MAPE: {{mape_rnn|safe}}</h3>
+    {% endblock %}
+
+
+    
